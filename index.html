@@ -3,10 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>Contact Page</title>
+  <link href='./style.css' rel='stylesheet'>
 </head>
 <body>
-  
+  <header>
+    <img src="./img/contact-form-icon.svg" alt="Becv logo">
+  </header>
+  <div class="page-content">
+    <div class="page-text">
+      <h1>Interested in our business pricing?</h1>
+      <h2>Fill out the form to view details and we'll contact you as soon as possible.</h2>
+    </div>
+  </div>
+  <div class="contact-form">
+    <form action="/submit-form" method="POST">
+      <div class="name-email">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Ethan Johnson">
+        </div>
+        
+        <div>
+          <label for="email">Company Email</label>
+          <input type="email" name="email" placeholder="ethan@johnson.com">
+        </div>
+      </div>
+      <div class="company-subject">
+        <div>
+          <label for="size">Company Size</label>
+          <select name="size">
+            <option value="fifty-to-one-hundred" selected>50-100 employees</option>
+            <option value="one-hundred-to-five-hundred">101-500 employees</option>
+            <option value="five-hundred-to-one-thousand">501-1000 employees</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <select name="subject">
+            <option value="landing" selected>Building Landing pages</option>
+            <option value="contact">Adding Contact pages</option>
+            <option value="upgrade">Upgrading website</option>
+          </select>
+        </div>
+      </div>
+      <div class="message">
+        <label for="message">Message</label>
+        <textarea type="text" name="message" placeholder="50-100 employees"></textarea>
+      </div>
+      <div class="contact-btn">
+        <button type="submit">Contact Sales</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
